@@ -9,12 +9,12 @@ function ColorPicker(){
     function handleColor(event){
         setColor(event.target.value);
     }
-    return(<div>
+    return(<div className="color-picker">
         <h1>Color Picker</h1>
         <div className="displayColor" style={{ backgroundColor:color }}>
-            <p>Selected Color: {color}</p>
+            <p >Selected Color: {color}</p>
         </div>  
-        <label htmlFor="">Select a Color:</label>
+        <label htmlFor="">Select a Color</label>
         <input type="color" name="" value={color} onChange={handleColor} />
     </div>);   
 }
